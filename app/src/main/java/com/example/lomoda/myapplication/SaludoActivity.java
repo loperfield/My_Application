@@ -19,5 +19,11 @@ public class SaludoActivity extends AppCompatActivity {
 
     //Localizamos los controles
     txtSaludo=(TextView)findViewById(R.id.txtSaludo);
+
+    //Recuperamos la informacion pasada en el intent
+    Bundle bundle=this.getIntent().getExtras();
+
+    //Y por ultimo asignamos el texto a la caja de texto nueva
+    txtSaludo.setText("HOLA, Cómo estás "+ bundle.getString("NOMBRE"));
     }
 }
