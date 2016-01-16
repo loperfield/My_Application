@@ -24,6 +24,6 @@ public class SaludoActivity extends AppCompatActivity {
     Bundle bundle=this.getIntent().getExtras();
 
     //Y por ultimo asignamos el texto a la caja de texto nueva
-    txtSaludo.setText("HOLA, Cómo estás "+ bundle.getString("NOMBRE"));
+    txtSaludo.setText("HOLA, ¿Cómo estás "+ bundle.getString("NOMBRE")+"?");
     }
 }
